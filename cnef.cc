@@ -715,9 +715,9 @@ int main(int argc, char **argv)
 	fprintf ( stderr, " Pre-processing data\n" );
 
 
-	if( sw . l < 50 )		
+	if( sw . l < 4 )		
 	{
-		fprintf ( stderr, " Error: The minimum length of a match is 50.\n" );
+		fprintf ( stderr, " Error: The minimum length of a match is 4.\n" );
 		return ( 1 );	
 	}
 
@@ -1280,7 +1280,7 @@ int main(int argc, char **argv)
 
 		find_maximal_exact_matches( q_gram_size , ref, rc_seq , q_grams, sw  );
 
-		if( q_grams->size() == 0 && sw . l == 50  )
+		if( q_grams->size() == 0 && sw . l == 4  )
 		{
 			fprintf( stderr, " Error: No CNEs found.\n" );
 			return ( 1 );
@@ -1300,7 +1300,7 @@ int main(int argc, char **argv)
 	{
 		find_maximal_exact_matches( q_gram_size , ref, query , q_grams,  sw );
 
-		if( q_grams->size() == 0 && sw . l == 50  )
+		if( q_grams->size() == 0 && sw . l == 4  )
 		{
 			fprintf( stderr, " Error: No CNEs found.\n" );
 			return ( 1 );
