@@ -1,4 +1,5 @@
 CNEFinder: Finding Conserved Non-coding Elements in Genomes
+NOTE: this version of CNEFinder has been modified to analyze a minimum repeat length of 4 so that it can be used by starfish, the Starship Finder Shell. More information available at https://github.com/egluckthaler/starfish
 ===
 
 <b>Description</b>: Given two genomes r and q, and a reference and query gene (or coordinate values), CNEFinder finds CNE matches between either the positions of the provided genes or coordinate values of the respective chromosomes of r and q.
